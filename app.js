@@ -47,16 +47,16 @@ function questiongenerator() {
 function answerchecker(e, box) {
   let correctanswer = number1 + number2;
   if ((e.keyCode === 13 || box.id == "submit-btn") && !game_over) {
-    console.log(box.value);
-    if (box.value == correctanswer) {
+    console.log(user_answer.value);
+    if (user_answer.value == correctanswer) {
       score += 1;
       score_box.innerHTML = score;
       questiongenerator();
-      box.value = "";
+      user_answer.value = "";
     } else {
       score -= 1;
       score_box.innerHTML = score;
-      box.value = "";
+      user_answer.value = "";
     }
   }
   if (box.innerText == "Retry" && game_over) {
