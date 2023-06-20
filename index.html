@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Battle</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
+</head>
+
+<body>
+    <div class="question_container">
+        <h2>Math Battle</h2>
+        <h3>Addition</h3>
+        <br>
+        <span id="question"></span><br>
+        <input id="user_answer" onkeypress="answerchecker(event, this)" type="number" placeholder="Answer..">
+        <button onclick="answerchecker(event, this)" id="submit-btn" class="submit-btn green_button">Submit</button>
+        <p class="score_text">Score: <span id="score"></span></p>
+    
+    </div>
+    <div class="settings">
+        <button class="green_button" style="background-color: #af844c;" id="game_type_btn" onclick="settings(this)"></button>
+        <button class="green_button" id="game_level_btn"  onclick="settings(this)"></button>
+
+    </div>
+    
+    <footer style="font-family: monospace; position: absolute; bottom: 5px; right: 15px;">Made with <span style="font-family: Segoe UI Emoji;">&#10084;</span> by <a target="_blank" href="https://github.com/theorangehat">@theorangehat</a></footer>
+</body>
+
+</html>
